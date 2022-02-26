@@ -63,8 +63,8 @@ input[type=button]#limpar {
     font-size: 22px;
 }
 
-input[type=button]:focus {
+input[type=button]:active {
     transform: scale(1.1);
     transition: all 0.1s;
-
+    border: 1px solid rgba(0,0,0,.1);
 }
