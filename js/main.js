@@ -1,4 +1,12 @@
-let elementButon;
-elementButon = document.querySelector('.tecla_pom');
+const buttons = document.querySelectorAll('button');
 
-console.log(elementButon);
+for (let i = 0; i < buttons.length; i++) {
+    const som = `#som_${buttons[i].classList[1]}`;
+    buttons[i].onclick = () => { tocarSom(som)};
+}
+
+function tocarSom(audioElementId){
+    document.querySelector(audioElementId).play();
+}
+
+
